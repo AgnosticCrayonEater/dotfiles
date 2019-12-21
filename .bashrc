@@ -15,4 +15,10 @@ alias disks='df -hT -x tmpfs'
 # Alias for dotfiles functionality
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# Alias for cleaning orphan packages
+alias yayclean='yay -Rns $(yay -Qtdq)'
+
+# Alias for opening nano with linenumbers
+alias nano='nano -l'
+
 PS1='[\u@\h \W]\$ '
